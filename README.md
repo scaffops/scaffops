@@ -1,4 +1,4 @@
-# scaffops
+# ScaffOps
 Take a sip of coffee while your project is being generated ☕
 
 # Idea
@@ -18,11 +18,11 @@ the way it's never needed to run arbitrary code other than the one in Jinja expr
 
 1. Provide a testing framework.
 
-   Similar to [CTT](https://github.com/kyleking/copier-template-tester), released in the scaffops package.
+   Similar to [CTT](https://github.com/kyleking/copier-template-tester), released in the ScaffOps package.
 
 1. Integrate with Git out of the box.
 
-   Maintaining a scaffolded project costs some pollution of the project history. To make the process minimally painful, scaffops will make sure to maintain a list of scaffops-originated commits
+   Maintaining a scaffolded project costs some pollution of the project history. To make the process minimally painful, ScaffOps will make sure to maintain a list of ScaffOps-originated commits
    to provide the possibility of periodically squashing template history and adding commits that change template-generated parts of source files to `.git-blame-ignore-revs`.
 
 1. Provide an auto-update service.
@@ -45,7 +45,7 @@ the way it's never needed to run arbitrary code other than the one in Jinja expr
 
      It's often unnecessary to make a project scaffolding support every case. During working with cookiecutter or copier, I often found myself categorizing
      my projects in hundreds of ways: does it use A or B? Well if A, scaffold X. If B, scaffold Y. In practice, 99% of the projects used A 1% used B. However, I strongly felt that it is
-     still worth adding this to a template for fully reproducible project generation. That is now possible—scaffops will expect the downstream projects to override _templates_, not files
+     still worth adding this to a template for fully reproducible project generation. That is now possible—ScaffOps will expect the downstream projects to override _templates_, not files
      generated (which is still possible for source files, though).
      Thus, whenever a template change feels like it could land as a logical branch at upstream, it is easy to do, since the change was applied to a template.
 
