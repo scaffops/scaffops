@@ -13,7 +13,7 @@ the way it's never needed to run arbitrary code other than the one in Jinja expr
 1. Provide a preview framework.
 
    Developing a project scaffolding is tiring if it's impossible to review your changes easily.
-   Using `watchfiles` and "downstream samples", it will be possible to preview how your changes will affect the downstream projects
+   Using a convenient facade of `watchfiles` and "downstream samples", it is possible to preview how your changes will affect the downstream projects
    before things get out of control.
 
 1. Provide a testing framework.
