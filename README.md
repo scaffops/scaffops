@@ -43,7 +43,7 @@ the way it's never needed to run arbitrary code other than the one in Jinja expr
 
      The less logical branches, the longer a piece of software will live (in other words, the easier it will be to maintain).
 
-     It's often unnecessary to make a project scaffolding support every case. During working with cookiecutter or copier, I often found myself categorizing
+     It's often unnecessary to make a project scaffolding support every case. During working with cookiecutter or copier, I often find myself categorizing
      my projects in hundreds of ways: does it use A or B? Well if A, scaffold X. If B, scaffold Y. In practice, 99% of the projects used A 1% used B. However, I strongly felt that it is
      still worth adding this to a template for fully reproducible project generation. That is now possible—ScaffOps will expect the downstream projects to override _templates_, not files
      generated (which is still possible for source files, though).
