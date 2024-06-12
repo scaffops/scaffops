@@ -1,0 +1,13 @@
+[package]
+name = "scaffops"
+version = "0.1.0"
+authors = ["bswck <bartosz@slawecki.dev>", "nekitdev <nekit@nekit.dev>"]
+edition = "2024"
+description = "..."
+documentation = "https://docs.rs/scaffops"
+readme = "README.md"
+repository = "https://github.com/scaffops/scaffops"
+homepage = "https://scaffops.dev/"
+license = "MIT"
+keywords = ["scaffold", "template"]
+categories = ["command-line-utilities", "development-tools"]
