@@ -11,6 +11,7 @@ authors = [
 ]
 dependencies = [
     "jinja2>=3.1.4",
+    "watchfiles>=0.22.0",
 ]
 readme = "README.md"
 requires-python = ">=3.8"
