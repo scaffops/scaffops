@@ -1,0 +1,7 @@
+# build artifacts
+
+target/
+
+# remove if lock file should be included
+
+Cargo.lock

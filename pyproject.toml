@@ -1,0 +1,39 @@
+[build-system]
+requires = ["maturin >= 1.7.0"]
+build-backend = "maturin"
+
+[project]
+name = "scaffops"
+version = "0.1.0"
+description = "..."
+readme = "README.md"
+requires-python = ">= 3.8"
+license.file = "LICENSE"
+keywords = ["scaffold", "template"]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Rust",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://scaffops.dev/"
+Chat = "https://scaffops.dev/chat"
+Documentation = "https://docs.rs/scaffops"
+Issues = "https://github.com/scaffops/scaffops/issues"
+Repository = "https://github.com/scaffops/scaffops"
+
+[tool.maturin]
+bindings = "bin"
+strip = true
