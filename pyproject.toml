@@ -1,0 +1,79 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scaffops"
+version = "0.1.0"
+description = "Tune your DevOps with scaffolding techniques."
+authors = [
+    { name = "bswck", email = "bartoszpiotrslawecki@gmail.com" }
+]
+dependencies = [
+    "jinja2>=3.1.4",
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.rye]
+managed = true
+virtual = false
+dev-dependencies = [
+    "mypy>=1.10.0",
+]
+
+[tool.ruff]
+exclude = ["tests/", "scripts/"]
+
+[tool.ruff.lint]
+# To discuss the presented rationales, contact the author (bswck).
+select = ["ALL"]
+ignore = [
+    # Description: Missing type annotation for self in method
+    # Rationale: It is mostly redundant, as is for ANN102.
+    "ANN101",
+
+    # Description: Missing type annotation for cls in method
+    # Rationale: It is mostly redundant, as is for ANN101.
+    "ANN102",
+
+    # Description: Dynamically typed expressions (typing.Any) are disallowed
+    # Rationale:
+    #  We use Any to allow user to constrain return types of our functions on their own.
+    #  For example, having a function `def foo() -> Any: ...` allows user to write
+    #  `my_foo: int = foo()` and have it passed type checking, since `Any` disables
+    #  type checking completely.
+    "ANN401",
+
+    # Description: 1 blank line required before class docstring
+    # Rationale: Remove the warning -- D211 (no-blank-line-before-class) preferred.
+    "D203",
+
+    # Description: Multi-line docstring summary should start at the second line
+    # Rationale: Remove the warning -- D213 (multi-line-summary-second-line) preferred.
+    "D212",
+
+    # Description: Line contains TODO, consider resolving the issue
+    # Rationale: Not appropriate for the project.
+    "FIX002",
+
+    # Description: Implicitly concatenated string literals on one line
+    # Rationale: Allegedly conflicts with the formatter.
+    "ISC001",
+
+    # Description: Trailing comma missing
+    # Rationale: Allegedly conflicts with the formatter.
+    "COM812",
+]
+
+[tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
+
+[tool.mypy]
+strict = true
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["scaffops"]
