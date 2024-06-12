@@ -10,13 +10,13 @@ pre/post "hooks" to complete project scaffolding—instead, the downstream proje
 the way it's never needed to run arbitrary code other than the one in Jinja expressions.
 
 ## What ScaffOps does differently than other scaffolding tools?
-1. Preview framework
+1. Provide a preview framework.
 
    Developing a project scaffolding is tiring if it's impossible to review your changes easily.
    Using `watchfiles` and "downstream samples", it will be possible to preview how your changes will affect the downstream projects
    before things get out of control.
 
-1. Test framework
+1. Provide a testing framework.
 
    Similar to [CTT](https://github.com/kyleking/copier-template-tester), released in the scaffops package.
 
