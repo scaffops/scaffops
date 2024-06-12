@@ -51,7 +51,7 @@ the way it's never needed to run arbitrary code other than the one in Jinja expr
 
    - Easy attribution.
 
-     Any time an update from an upstream repo is pulled, separate update commits are applied per template in the repo with proper co-authorships out of the box.
+     Anytime an update from an upstream repo is pulled, separate update commits are applied per template in the repo with proper co-authorships out of the box.
      This way, people who contributed to developing upstream templates are also credited in every downstream project, without necessarily having to copy the whole history.
 
    - Easy guidance and contribution transfers.
