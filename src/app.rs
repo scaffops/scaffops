@@ -47,11 +47,10 @@ impl Error {
 pub struct Globals {
     /// The directory to change to before doing anything.
     #[arg(
-        short = 'D',
-        long,
+        short = 'C',
         global = true,
-        name = "DIRECTORY",
-        help = "Change to this directory before doing anything"
+        name = "path",
+        help = "Set the working directory"
     )]
     pub directory: Option<PathBuf>,
 }
