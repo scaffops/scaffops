@@ -48,9 +48,10 @@ pub struct Globals {
     /// The directory to change to before doing anything.
     #[arg(
         short = 'C',
+        long,
         global = true,
-        name = "path",
-        help = "Set the working directory"
+        name = "DIRECTORY",
+        help = "Change to this directory before doing anything"
     )]
     pub directory: Option<PathBuf>,
 }
